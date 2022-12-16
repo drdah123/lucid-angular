@@ -1,0 +1,94 @@
+<div class="newsletter" id="newsletter">
+  <div class="newsletter-head">
+    <h2>Stay up to speed on the latest at Lucid.</h2>
+  </div>
+  <div>
+    <div class="newsletter-form">
+      <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <div class="newsletter-form-item">
+          <div *ngIf="isEmailFocused" class="newsletter-label">
+            <label>email</label>
+          </div>
+          <div class="newsletter-form-item-input">
+            <input
+              type="email"
+              placeholder="Email@email.com"
+              required
+              name="email"
+              (focus)="onFocused()"
+              [(ngModel)]="form.email"
+              #email="ngModel"
+            />
+          </div>
+        </div>
+        <div *ngIf="isWannaJoinMailList">
+          <div class="newsletter-form-item-input">
+            <div><label>First name</label></div>
+            <input
+              type="text"
+              placeholder="Abdulrahman "
+              name="firstName"
+              required
+              [(ngModel)]="form.firstName"
+              #firstName="ngModel"
+            />
+          </div>
+          <div class="newsletter-form-item-input">
+            <div>
+              <label>last name</label>
+            </div>
+            <input
+              type="text"
+              placeholder="alotebe"
+              name="lastName"
+              required
+              [(ngModel)]="form.secondName"
+              #secondName="ngModel"
+            />
+          </div>
+          <div class="newsletter-form-item-input">
+            <div>
+              <label>country</label>
+            </div>
+            <input
+              type="tel"
+              placeholder="Saudi Arabia"
+              name="country"
+              required
+              [(ngModel)]="form.country"
+              #country="ngModel"
+            />
+          </div>
+          <div class="newsletter-form-item-input">
+            <div>
+              <label>postal code</label>
+            </div>
+            <input
+              type="tel"
+              placeholder="1234-1222"
+              name="postalCode"
+              required
+              [(ngModel)]="form.postalCode"
+              #postalCode="ngModel"
+            />
+          </div>
+        </div>
+
+        <div *ngIf="isEmailFocused">
+          <div class="newsletter-checkbox">
+            <input type="checkbox" (click)="wannaJoinMailList()" />
+            <p>
+              Join our mailing list for early access to product announcements,
+              special events in your area, promotions, and more.
+            </p>
+          </div>
+          <div class="newsletter-button">
+            <button type="submit" [disabled]="">
+              <span>Subscribe</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

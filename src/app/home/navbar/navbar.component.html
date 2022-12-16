@@ -1,0 +1,31 @@
+<div class="navbar">
+  <app-menu
+    [isMenuClicked]="isMenuClicked"
+    (setIsMenuClickedEmit)="setIsMenuClicked()"
+  ></app-menu>
+  <div class="navbar-item">
+    <a href="##" alt=""> LUCID AIR </a>
+    <a href="##" alt=""> DESIGN YOURS </a>
+    <a href="##" alt=""> RESERVE </a>
+  </div>
+  <div>
+    <a href="#home" alt="" class="logo">
+      <img
+        src="https://www.lucidmotors.com/media/image/main-nav/logo.svg"
+        alt=""
+      />
+    </a>
+  </div>
+  <div class="navbar-item">
+    <button (click)="('')"><mat-icon>public</mat-icon></button>
+    <a href="##" alt=""> SIGN IN </a>
+    <div>
+      <a href="#newsletter" class="newsletter-a">
+        <span class="text-area">STAY UPDATE</span>
+      </a>
+    </div>
+    <button (click)="setIsMenuClicked()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</div>

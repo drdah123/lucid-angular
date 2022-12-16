@@ -1,0 +1,49 @@
+<div class="car-container-col">
+  <div class="car-selector" (click)="openMenu()">
+    {{ car.name }}
+    <div class="car-selector-item">
+      <img [src]="carWheel?.image" alt="" />
+      <img [src]="carColor?.image" alt="" />
+      <!-- <IoMdArrowDropdown /> -->
+    </div>
+  </div>
+  <div>
+    <div *ngIf="isOpen" class="car-menu-selector-item">
+      <div (click)="chooseDesign(c.name, 'name')" *ngFor="let c of cars">
+        <p>{{ c.name }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="car-picture-container">
+    <img [src]="carImage?.image" alt="" />
+  </div>
+  <div>
+    <div class="car-color-container">
+      <div *ngFor="let color of carColors">
+        <div *ngIf="color.model === car.name">
+          <img
+            [src]="color.image"
+            (click)="chooseDesign(color.name, 'color')"
+          />
+        </div>
+      </div>
+    </div>
+    <div>{{ car.color }}</div>
+
+    <div class="car-wheel-container">
+      <div *ngFor="let wheel of carWheels" class="col-container">
+        <img
+          *ngIf="wheel.model === car.name"
+          [src]="wheel.image"
+          (click)="chooseDesign(wheel.name, 'wheel')"
+        />
+      </div>
+
+      <div class="car-wheel-name">{{ car.wheel }}</div>
+      <div class="car-button">
+        <button>Design Yours</button>
+        <button>Reserve Now</button>
+      </div>
+    </div>
+  </div>
+</div>

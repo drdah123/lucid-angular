@@ -1,0 +1,16 @@
+<swiper
+  [slidesPerView]="2"
+  [spaceBetween]="300"
+  [speed]="2000"
+  class="mySwiper2"
+  [loop]="true"
+  [pagination]="true"
+  [navigation]="true"
+>
+  <ng-container *ngFor="let car of carsProject; index as i">
+    <ng-template swiperSlide let-data>
+      <app-car-card-project [car]="car" [isActive]="data.isActive">
+      </app-car-card-project>
+    </ng-template>
+  </ng-container>
+</swiper>

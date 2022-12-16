@@ -1,0 +1,22 @@
+.card-story {
+  border-left: 0.5px solid lightslategray;
+  color: #fff;
+  font-family: GTAmerica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    Roboto, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-weight: 400;
+  width: 10rem;
+  text-align: center;
+  right: 15%;
+  top: 7%;
+  padding: 1.3rem 0;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 4;
+  width: 560px;
+  padding: 0 10px;
+}
+
+img {
+  height: 344px;
+  width: 490px;
+}

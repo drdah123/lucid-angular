@@ -1,0 +1,136 @@
+.compare-page-container {
+  width: 100vw;
+  height: 150vh;
+  background-color: black;
+  color: aliceblue;
+  position: relative;
+}
+.compare-card-container {
+  display: grid;
+  grid-template: 100vh / 33.5% 33.5% 33.5%;
+  padding: 0 5%;
+  background-image: url("../../../assets/Screenshot 2022-11-13 041856.jpg");
+  background-size: cover;
+  background-position: 0 88vh;
+  height: 100vh;
+}
+
+.col-container {
+}
+.compare-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.car-container-col {
+  margin: 0 5%;
+}
+.car-selector {
+  border: 1px solid #fff;
+  text-align: start;
+  padding: 5% 7.5%;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+}
+.car-selector svg {
+  position: absolute;
+  right: 5%;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.car-selector img:nth-child(1) {
+  width: 15%;
+  height: 40%;
+  margin-left: 50%;
+  right: 28.5%;
+  position: absolute;
+}
+.car-selector img:nth-child(2) {
+  width: 15%;
+  height: 40%;
+  margin-left: 50%;
+  right: 12.5%;
+  position: absolute;
+}
+
+.active svg {
+  rotate: 180deg;
+}
+
+.select-model {
+  margin-left: 6.6%;
+}
+.car-picture-container img {
+  width: 97%;
+  margin-top: 35%;
+}
+
+.car-color-container img {
+  width: 100%;
+}
+.car-color-container {
+  margin-top: 10%;
+  display: grid;
+  gap: 10px;
+  grid-template: 45% / 33% 33% 33%;
+}
+.car-wheel-container {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  grid-template: 30% / 33% 33% 33%;
+  position: relative;
+  top: 50%;
+}
+.car-wheel-container img {
+  width: 100%;
+}
+.car-button {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 4;
+}
+.car-wheel-name {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+}
+.car-button button {
+  border: 1px solid white;
+  background: inherit;
+  color: #fff;
+  width: 40%;
+  padding: 6%;
+  cursor: pointer;
+  margin-top: 10%;
+}
+
+.car-menu-selector-item {
+  display: flex;
+  align-items: center;
+  flex: 1 1;
+  text-align: center;
+  width: 87.5%;
+  left: 6.5%;
+  position: absolute;
+}
+.car-menu-selector-item div {
+  border: 1px solid white;
+  background: rgb(22, 22, 22);
+  cursor: pointer;
+  height: 100%;
+
+  width: 100%;
+}
+.car-menu-selector-item div:hover {
+  background: black;
+}
+.car-menu-selector-item p {
+  font-size: 1.001vw;
+  margin: 1.8rem 0;
+}

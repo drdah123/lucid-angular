@@ -1,0 +1,45 @@
+<div class="our-stories">
+  <div class="our-stories-header">
+    <div>
+      <h3>Our stories</h3>
+    </div>
+    <div class="our-stories-header-link">
+      <a href="##2">View all</a>
+    </div>
+  </div>
+  <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="100"
+    [speed]="2000"
+    class="mySwiper"
+    [loop]="true"
+    [freeMode]="true"
+    [pagination]="true"
+  >
+    <ng-container *ngFor="let story of OurStories; index as i">
+      <ng-template swiperSlide>
+        <app-card-stories [story]="story"> </app-card-stories>
+      </ng-template>
+    </ng-container>
+  </swiper>
+  <div class="projects">
+    <div class="single-project">
+      <a href="##">
+        <img src="assets/group-608-web.webp" alt="" />
+        <div class="projects-content">
+          <p>Studios</p>
+          <p>Our location</p>
+        </div>
+      </a>
+    </div>
+    <div class="single-project">
+      <a href="$$">
+        <img src="assets/group-608-web.webp" alt="" />
+        <div class="projects-content">
+          <p>Careers</p>
+          <p>Join Lucid</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
