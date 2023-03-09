@@ -1,5 +1,6 @@
 # lucid clone
-      imitation lucid-motors home page, this lucid clone has good template, responsive, use carousel swiper js Library with loop, blur background, change design by dynamic menu and pictures,
+imitation lucid-motors home page, this lucid clone has good template, responsive, use carousel swiper js Library with loop, blur background, change design by dynamic
+menu and pictures
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
