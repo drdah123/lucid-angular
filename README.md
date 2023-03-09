@@ -1,6 +1,10 @@
-# MyApp
+# lucid clone
+      imitation lucid-motors home page, this lucid clone has good template, responsive, use carousel swiper js Library with loop, blur background, change design by dynamic menu and pictures,
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
+
+[![Preview](https://github.com/drdah123/portfolio/blob/main/src/assets/img2/Screenshot_20221117_075533.png)](https://lustrous-torrone-884988.netlify.app)
+
 
 ## Development server
 
