@@ -9,12 +9,12 @@
   </div>
   <swiper
     [slidesPerView]="3"
-    [spaceBetween]="100"
     [speed]="2000"
     class="mySwiper"
     [loop]="true"
     [freeMode]="true"
     [pagination]="true"
+    [pagination]="{ type: 'progressbar' }"
   >
     <ng-container *ngFor="let story of OurStories; index as i">
       <ng-template swiperSlide>

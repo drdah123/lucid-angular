@@ -1,7 +1,7 @@
 <div class="car-container-col">
   <div class="car-selector" (click)="openMenu()">
     {{ car.name }}
-    <div class="car-selector-item">
+    <div class="car-selector-img-container">
       <img [src]="carWheel?.image" alt="" />
       <img [src]="carColor?.image" alt="" />
       <!-- <IoMdArrowDropdown /> -->
@@ -20,30 +20,30 @@
   <div>
     <div class="car-color-container">
       <div *ngFor="let color of carColors">
-        <div *ngIf="color.model === car.name">
-          <img
-            [src]="color.image"
-            (click)="chooseDesign(color.name, 'color')"
-          />
-        </div>
+        <img
+          [src]="color.image"
+          *ngIf="color.model === car.name"
+          (click)="chooseDesign(color.name, 'color')"
+        />
       </div>
     </div>
     <div>{{ car.color }}</div>
+  </div>
 
-    <div class="car-wheel-container">
-      <div *ngFor="let wheel of carWheels" class="col-container">
-        <img
-          *ngIf="wheel.model === car.name"
-          [src]="wheel.image"
-          (click)="chooseDesign(wheel.name, 'wheel')"
-        />
-      </div>
+  <div class="car-wheel-container">
+    <div *ngFor="let wheel of carWheels" class="col-container">
+      <img
+        *ngIf="wheel.model === car.name"
+        [src]="wheel.image"
+        (click)="chooseDesign(wheel.name, 'wheel')"
+      />
+    </div>
+    <div></div>
 
-      <div class="car-wheel-name">{{ car.wheel }}</div>
-      <div class="car-button">
-        <button>Design Yours</button>
-        <button>Reserve Now</button>
-      </div>
+    <div class="car-wheel-name">{{ car.wheel }}</div>
+    <div class="car-button">
+      <button>Design Yours</button>
+      <button>Reserve Now</button>
     </div>
   </div>
 </div>

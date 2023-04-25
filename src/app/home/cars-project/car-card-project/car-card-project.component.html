@@ -1,8 +1,10 @@
 <div class="swiper-item">
   <img class="d-block w-100" [src]="car.image" alt="First slide" />
   <div [ngClass]="{ 'swiper-name': true, 'swiper-active': isActive }">
-    <h3>{{ car.name }}</h3>
-    <p>{{ car.desc }}</p>
+    <div className="card-header">
+      <h3>{{ car.name }}</h3>
+      <p>{{ car.desc }}</p>
+    </div>
     <div class="swiper-car-design">
       <a href="#2"> <span>Design yours </span></a>
       <a href="#cars-comparer" alt=""> Compare models </a>

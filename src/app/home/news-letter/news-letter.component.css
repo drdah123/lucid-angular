@@ -5,16 +5,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  overflow: hidden;
-  width: 100vw;
-}
-.newsletter div .newsletter-head {
-  margin-left: 1rem;
+  padding: 3.375rem 1.5625rem 1.75rem;
 }
 
 .newsletter-form {
-  padding: 2rem auto auto auto;
-  margin-right: -5rem;
+  padding: 2rem auto auto;
 }
 
 .newsletter-form-item-input input {
@@ -22,12 +17,10 @@
   padding: 0 20px;
   border: 0;
   width: 35vw;
-  margin-right: 200px;
 }
 .newsletter-checkbox {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .newsletter-checkbox p {
   font-size: 5px;
@@ -38,14 +31,22 @@
   height: 1.5rem;
   width: 1.5rem;
   margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+  appearance: none;
+  border: 1px black solid;
+}
+.newsletter-checkbox input:checked {
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTkuODk0IDEuMjVMOC43ODEuMTAzQS4zMzIuMzMyIDAgMCAwIDguNTQyIDBhLjMzMi4zMzIgMCAwIDAtLjIzOS4xMDNMMy42NjQgNC44ODIgMS42OSAyLjg0OWEuMzMxLjMzMSAwIDAgMC0uNDc4IDBMLjEgMy45OTdhLjM1Mi4zNTIgMCAwIDAgMCAuNDkybDMuMzI2IDMuNDI3YS4zMzIuMzMyIDAgMCAwIC40NzcgMGw1Ljk5Mi02LjE3NGEuMzU3LjM1NyAwIDAgMCAwLS40OTIiLz4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNyA4KSI+CiAgICAgICAgPG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNhIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDx1c2UgZmlsbD0iIzAwMCIgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICA8ZyBmaWxsPSIjNDA0MjNGIiBtYXNrPSJ1cmwoI2IpIj4KICAgICAgICAgICAgPHBhdGggZD0iTS03LThoMjR2MjRILTd6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K);
+  background-size: 1.5rem 1.5rem;
+  background-position: center;
 }
 .newsletter-head {
-  width: 20%;
-  margin: 0 5% 10% 10%;
+  padding-right: 10%;
+  align-self: flex-start;
 }
 .newsletter-button button {
   font-size: 16px;
-  /* text-transform: none; */
   padding: 1rem 4.5rem;
   letter-spacing: 0.125px;
   background: rgb(27, 27, 27);
@@ -56,4 +57,9 @@
   color: #000;
   background: #fff;
   animation: fadeIn 1s;
+}
+@media (min-width: 1024px) {
+  .newsletter {
+    padding: 6.25rem 5.625rem 6.5625rem;
+  }
 }
