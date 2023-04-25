@@ -6,6 +6,7 @@
   [loop]="true"
   [pagination]="true"
   [navigation]="true"
+  [pagination]="{ type: 'progressbar' }"
 >
   <ng-container *ngFor="let car of carsProject; index as i">
     <ng-template swiperSlide let-data>

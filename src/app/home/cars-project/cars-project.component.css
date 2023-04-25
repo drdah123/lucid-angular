@@ -1,5 +1,6 @@
-@import "~swiper/css";
+@import "~swiper/css ";
 @import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
 .mySwiper2 {
   background-image: url("../../../assets/Screenshot 2022-11-13 041856.jpg");
   width: 100vw;
